@@ -1,7 +1,5 @@
 import pygame, random
-
 pygame.init()
-
 clock = pygame.time.Clock()
 
 FPS = 20
@@ -67,7 +65,6 @@ def new_grid():
             column += ["not visited"]  # not visited, visited, locked............and visiting
         grid += [column[:]]
     return grid
-# pygame.draw.rect(WIN, self.color, (self.x, self.y, self.WIDTH, self.WIDTH))
 
 def draw_grid(grid, horizontal_walls, vertical_walls):
     for column in range(MAZE_WIDTH):
@@ -88,8 +85,7 @@ def draw_grid(grid, horizontal_walls, vertical_walls):
             pygame.draw.rect(SCREEN, WALL_COLOR_DICT[horizontal_walls[column][row]], (x, y, CELL_SIDE, WALL_WIDTH))
 
 
-
-
+            
 def main():
     vertical_walls = new_vertical_walls()
     horizontal_walls = new_horizontal_walls()
@@ -170,5 +166,3 @@ def main():
 
 
 main()
-
-
