@@ -4,7 +4,7 @@ pygame.init()
 
 clock = pygame.time.Clock()
 
-FPS = 60
+FPS = 20
 WIDTH = 500
 HEIGHT = 500
 
