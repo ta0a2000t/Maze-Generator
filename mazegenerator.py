@@ -162,6 +162,10 @@ def main():
                               CELL_SIDE, CELL_SIDE))
 
         draw_grid(grid, horizontal_walls, vertical_walls)
+        pygame.draw.rect(SCREEN, CELL_COLOR_DICT['visiting'],
+                         (50 + current_pos[0] * (CELL_SIDE + WALL_WIDTH) + WALL_WIDTH,
+                          50 + current_pos[1] * (CELL_SIDE + WALL_WIDTH) + WALL_WIDTH, CELL_SIDE, CELL_SIDE))
+
         pygame.display.flip()
 
 
